@@ -8,6 +8,7 @@
 
 
 配置方法：
+
 a.首先通过实现接口ImageLoader来自定义图片加载方式，例如，如果用glide框架，可如下定义：
 ```
 public class GlideImageLoader implements ImageLoader {
@@ -89,6 +90,37 @@ RxImagePicker
           public void accept(@NonNull List<Video> videos) throws Exception {
             // 在这里返回了选择的视频        
           });
+```
+
+3.其他相关
+
+model类
+```
+public class Image implements Serializable {
+    public long id;
+    public String name;                 // 图片名字
+    public String path;                 // 图片路径
+    public long size;                   // 图片大小
+    public int width;                   // 图片宽度
+    public int height;                  // 图片高度
+    public String mimeType;
+    public long addTime;
+}
+
+
+public class Video {
+
+    public String name;                   // 视频名字
+    public String path;                   // 视频路径
+    public String thumbnail;              // 视频缩略图
+    public long size;                     // 视频大小
+    public long duration;                 // 视频时长
+    public int width;                     // 视频宽度
+    public int height;                    // 视频高度
+    public String mimeType;
+    public long addTime;
+}
+
 ```
 
 
