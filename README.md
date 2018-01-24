@@ -4,4 +4,4 @@
 
 1. 选择图片
 
-![image](https://github.com/devilist/RxImagePicker/raw/master/imimageages/.gif)
+![image](https://github.com/devilist/RxImagePicker/raw/master/images/image.gif)
