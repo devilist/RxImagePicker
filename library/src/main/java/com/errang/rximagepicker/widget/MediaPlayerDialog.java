@@ -145,8 +145,11 @@ public class MediaPlayerDialog extends BaseAnimDialog implements
         rl_video.getLayoutParams().height = mScreenWidth;
         sb_bar.setEnabled(false);
         tv_control.setActivated(false);
-        if (isHttpVideo) pv_progress.setCurrentProgress(0.5f);
-//        Glide.with(getContext()).load(coverUrl).asBitmap().into(
+        if (isHttpVideo) {
+            pv_progress.setCurrentProgress(0.5f);
+        } else {
+            pv_progress.setVisibility(View.GONE);
+        }//        Glide.with(getContext()).load(coverUrl).asBitmap().into(
 //                new BitmapImageViewTarget(iv_cover) {
 //                    @Override
 //                    protected void setResource(Bitmap resource) {
