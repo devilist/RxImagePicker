@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#dcb97a</color>
+
+    <color name="colorStatusBar_303135">#303135</color>
+    <color name="colorToolbar_393a3f">#393a3f</color>
+    <color name="colorbackground_202020">#202020</color>
+
+    <color name="colorStatusBar_ffffff">#ffffff</color>
+    <color name="colorToolbar_ffffff">#ffffff</color>
+    <color name="colorbackground_ebedf0">#ebedf0</color>
+
+    <color name="color_f26d85">#f26d85</color>
+    <color name="color_66dcb97a">#66dcb97a</color>
+    <color name="color_303030">#303030</color>
+    <color name="color_c2c2c2">#c2c2c2</color>
+    <color name="color_757575">#757575</color>
+    <color name="color_bb393a3f">#bb393a3f</color>
+    <color name="color_99000000">#99000000</color>
+    <color name="color_bb000000">#bb000000</color>
+
+</resources>

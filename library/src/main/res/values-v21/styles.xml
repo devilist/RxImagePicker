@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar.StatusBarTransparent" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--activity转场动画-->
+        <item name="android:windowContentTransitions">true</item>
+        <!--状态栏透明-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--navigationBar透明-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar.transparent" parent="AppTheme.NoActionBar.StatusBarTransparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

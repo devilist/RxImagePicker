@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:padding="0.5dp">
+
+    <com.errang.rximagepicker.widget.ResizeImageView
+        android:id="@+id/iv_image_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_image_default" />
+
+    <ImageView
+        android:id="@+id/iv_item_selected"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:padding="6dp"
+        android:src="@drawable/selector_item_1" />
+
+</RelativeLayout>
