@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@android:color/black">
+
+        <RelativeLayout
+            android:id="@+id/rl_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/black">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:scaleType="centerCrop"
+                android:tint="#22000000" />
+
+            <TextureView
+                android:id="@+id/textureview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#22000000"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tv_control"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/rx_selector_play_video" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/sb_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.errang.rximagepicker.widget.ProgressView
+        android:id="@+id/pv_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        app:progress_loaded_color="@android:color/white"
+        app:progress_radius="25dp"
+        app:progress_show_text="false"
+        app:progress_unload_color="@android:color/transparent"
+        app:progress_width="25dp" />
+
+</RelativeLayout>

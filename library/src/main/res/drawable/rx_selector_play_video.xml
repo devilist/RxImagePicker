@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_longAnimTime"
+    android:exitFadeDuration="@android:integer/config_longAnimTime">
+
+    <item android:state_activated="true"  android:drawable="@drawable/ic_pause_white_24dp"/>
+    <item android:state_activated="false" android:drawable="@drawable/ic_play_24dp" />
+
+</selector>

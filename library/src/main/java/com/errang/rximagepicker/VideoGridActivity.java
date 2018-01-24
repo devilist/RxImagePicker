@@ -17,6 +17,7 @@ import com.errang.rximagepicker.model.Video;
 import com.errang.rximagepicker.model.VideoFolder;
 import com.errang.rximagepicker.ui.ImageBaseActivity;
 import com.errang.rximagepicker.utils.StatusbarUtil;
+import com.errang.rximagepicker.widget.MediaPlayerDialog;
 
 import java.util.ArrayList;
 
@@ -134,6 +135,8 @@ public class VideoGridActivity extends ImageBaseActivity implements View.OnClick
             toggleView();
         } else if (v.getId() == R.id.iv_image_item || v.getId() == R.id.iv_play) {
             // preview
+            MediaPlayerDialog.newInstance(item.path, item.thumbnail)
+                    .show(getSupportFragmentManager());
         }
     }
 }
