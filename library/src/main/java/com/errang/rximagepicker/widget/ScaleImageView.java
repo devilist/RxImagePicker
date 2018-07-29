@@ -471,6 +471,8 @@ public class ScaleImageView extends ImageView implements
 
     @Override
     public boolean getCropToPadding() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN)
+            return false;
         return super.getCropToPadding();
     }
 }
